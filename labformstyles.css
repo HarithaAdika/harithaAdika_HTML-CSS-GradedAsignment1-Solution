@@ -1,0 +1,53 @@
+.container{
+  Display: flex;
+
+}
+.lab-form{
+  margin: 50px auto;
+  text-align: left;
+  margin-left: auto;
+  min-width: 500px;
+  left: 0px;
+
+}
+.image-container {
+  Width: 50%;
+}
+
+/* label color */
+.input-field label {
+    color: gray;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #000;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  .select-field > label{
+    font-weight: bold;
+    color: black;
+    font-size: 13px;
+  }
+  #district{
+    outline: auto;
+  }
+h5{
+  font-weight: bold;
+}
+#test-type-message{
+  color: red;
+}
+.form-button{
+  text-align: center;
+  outline: none;
+  
+}
+.form-button > button{
+  margin-right: 20px;
+  background-color:rgb(163, 109, 213);
+  text-transform: capitalize;
+}

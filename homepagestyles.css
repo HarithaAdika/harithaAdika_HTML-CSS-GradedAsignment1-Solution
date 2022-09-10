@@ -1,0 +1,87 @@
+.img-box-animation{
+    border: 2px solid steelblue;
+    width: 100%;
+    height: 500px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-size:100% 100vh;
+    animation-name: my-img-animation;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+} 
+@keyframes my-img-animation {
+    0%{
+       background-image: url(./Images/Animation/ani1.jpg); 
+    }
+    30%{
+        background-image: url(Images/Animation/ani2.png);
+    }
+    60%{
+        background-image: url(Images/Animation/ani3.jpg);
+    }
+    90%{
+        background-image: url(Images/Animation/ani4.jpg);
+    }
+    100%{
+        background-image: url(Images/Animation/ani5.jpg);
+    }
+    
+}
+
+.content-right-product{ 
+    width:200px; padding:0px 5px; margin:15px; float:left;
+     -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3) !important; 
+     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3) !important;
+     background-color: lavender;
+    }
+    .content-right-product-h4{ width:240px; font-size:16px; font-weight:600; color:#000; padding:5px 15px; float:left; text-align:left !important;}
+    .content-right-product-p{width:240px; color:dodgerblue; line-height:26px; padding:5px 15px; float:left; text-align:left !important;}
+    .content-right-product-amount{width:240px; color:dodgerblue !important; font-weight:bold; font-size:26px; padding:5px 15px 10px; float:left; text-align:center !important;}
+    
+    .cart{
+        background-color: rgb(239, 239, 249)!important;
+        font-size: 17px;
+        color: orangered;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 6px 10px;
+        text-align: center;
+        border:1px solid cornflowerblue;
+        display:inline-block;
+        padding:0px;
+        margin-left:-4px;
+                
+    }
+
+   #covid-care-img,#diabetes-care-img{
+        width:200px; 
+        height:100px;
+    }
+    .btn-add-to-cart{
+        text-decoration: none;
+        color: orange;
+        font-weight: bold;
+        width: 200px;
+        background-color:  lavender ;
+        border-radius: 6px;
+        border:1.5px solid cornflowerblue;
+    }
+    .btn{
+        height: 90px;
+    }
+    .btn :hover{
+        background-color:  rgb(250, 234, 230) ;
+        border-color: rgb(0, 255, 76);
+
+    }
+    .covid-care-container,.diabetes-care-container::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .content-right-product:hover{
+        width: 220px;
+        height: 230px;
+    }
+    

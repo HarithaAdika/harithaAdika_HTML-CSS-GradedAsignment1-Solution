@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet"  
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="labformstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lab-form">
+            <form>
+                <div class="row">
+                    <h5>1.Your Contact Details</h5>
+                    <div class="input-field col s6">
+                        <input id="full_name" type="text" placeholder="Full Name" value="">
+                        <label for="full_name">Full Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="patient_id" type="text" placeholder="Patient Id if exists" value="">
+                        <label for="patient_id">Patient Id if exists</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="contact_number" type="text" placeholder="Contact Number" value="">
+                        <label for="contact_number">Contact Number</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="email_id" type="text" placeholder="Email Id" value="">
+                        <label for="email_id">Email Id</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5>2.Address</h5>
+                    <div class="input-field col s6">
+                        <input id="house_no" type="text" placeholder="H-No" value="">
+                        <label for="house_no">H-No</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="street" type="text" placeholder="Street" value="">
+                        <label for="street">Street</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="area" type="text" placeholder="Area" value="">
+                        <label for="area">Area</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="select-field col s4">
+                        <label for="district">District</label>
+                        <select id="district" class="browser-default">
+                            <option value="" disbled selected>Choose</option>
+                            <option value="1">Chikballapur</option>
+                            <option value="2">Chikkamangaluru</option>
+                            <option value="3">Haveri</option>
+                            <option value="4">Kolar</option>
+                            <option value="5">Raichur</option>
+                            <option value="6">Udupi</option>
+                            <option value="7">Vijayapura</option>
+                            <option value="8">Tumkur</option>
+                        </select>   
+                    </div>
+                </div>
+                <div class="row">
+                    <h5>3.Choose Test Type</h5>
+                    <p id="test-type-message">check atleast one box atleast without fail</p>
+                    <div class="input-field col s6">
+                        <input id="test_type1" type="checkbox" value="CBC">
+                        <label for="test_type1">CBC</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="test_type2" type="checkbox" value="Complete Urine">
+                        <label for="test_type2">Complete Urine</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="test_type3" type="checkbox" value="Lipid Profile">
+                        <label for="test_type3">Lipid Profile</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="test_type4" type="checkbox" value="Thyroid Stimulating Hormone(TSH)">
+                        <label for="test_type4">Thyroid Stimulating Hormone(TSH)</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="test_type5" type="checkbox" value="Glucose Test">
+                        <label for="test_type5">Glucose Test</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <span>Do you want  a hard copy of the report also?</span>
+                    <input id="report" type="radio" value="Yes">
+                    <label for="report">Yes</label>
+                    <input id="report" type="radio" value="No">
+                    <label for="report">No</label>
+    
+                </div>
+                <div class="row">
+                    <span>Select Your Comfortable Date and Time</span>
+                        <input type="datetime-local" id="test-date-time" name="test-date-time">
+    
+                </div>
+
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="Images/Lab-Test/lab-test.jpg" alt="Lab Test Image">
+    
+        </div>        
+
+    </div>
+    <div class="form-button">
+        <button class="waves-effect waves-light btn">Submit</button>
+        <button class="waves-effect waves-light btn">Reset</button>
+    </div>
+    
+    
+</body>
+</html>
